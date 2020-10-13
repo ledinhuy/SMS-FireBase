@@ -1,0 +1,19 @@
+<div class="col-md-12">
+  <div class="card card-container">
+    <img src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" alt="" class="profile-img-card">
+    <form >
+      <div class="form-group">
+        <label for="phone">Nhập số điện thoại/Email</label>
+        <input type="text" name="phone" id="phone" [(ngModel)]="phone"  class="form-control" placeholder="Nhập số điện thoại/Email">
+      </div>
+    </form>
+    <hr>
+    <div id="recaptcha-container"></div>
+    <hr>
+    <div class="form-group">
+      <button class="btn btn-primary btn-block" (click)="sendLoginCode()">
+        Xác nhận
+      </button>
+    </div>
+  </div>
+</div>
